@@ -17,7 +17,10 @@ const ProductsScreen = () => {
                 ${item.price}
                 </Text>
                 <Link 
-                  href={`/products/${item.id}`}
+                  href={{
+                    pathname: "/(stack)/products/[id]",
+                    params: { id: item.id }
+                  }}
                   className='text-primary font-works-bold'
                 >
                   Ver detalles
