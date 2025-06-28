@@ -9,7 +9,7 @@ const HomeScreen = () => {
       <View>
         <Text className="text-3xl font-works-medium mb-5">Menú</Text>
 
-        <Link href="/profile" asChild>
+        <Link href="/tabs/(stack)/profile" asChild>
           <CustomButton color="secondary" textColor="white" className="mb-2">
             Perfil
           </CustomButton>
@@ -19,7 +19,7 @@ const HomeScreen = () => {
           className="mb-2"
           color="primary"
           textColor="white"
-          onPress={() => router.push("/products")}
+          onPress={() => router.push("/tabs/(stack)/products")}
         >
           Productos
         </CustomButton>
@@ -27,7 +27,7 @@ const HomeScreen = () => {
         <CustomButton
           textColor="white"
           color="tertiary"
-          onPress={() => router.push("/settings")}
+          onPress={() => router.push("/tabs/(stack)/settings")}
         >
           Configuración
         </CustomButton>
