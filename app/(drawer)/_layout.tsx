@@ -7,6 +7,7 @@ const DrawerLayout = () => {
         <Drawer
             drawerContent={CustomDrawer} // You can customize the drawer content here
             screenOptions={{
+                headerShown: false, 
                 overlayColor: 'rgba(0, 0, 0, 0.4)',
                 drawerActiveBackgroundColor: '#4f46e5',
                 drawerActiveTintColor: '#fff',
@@ -33,6 +34,16 @@ const DrawerLayout = () => {
                     title: 'Horario',
                     drawerIcon: ({ color, size }) => (
                         <Ionicons name="calendar-outline" size={size} color={color} />
+                    )
+                }}
+            />
+            <Drawer.Screen
+                name="(tabs)" // This is the name of the page and must match the url from root
+                options={{
+                    drawerLabel: 'Tabs + Stack',
+                    title: 'Tabs + Stack',
+                    drawerIcon: ({ color, size }) => (
+                        <Ionicons name="albums-outline" size={size} color={color} />
                     )
                 }}
             />
