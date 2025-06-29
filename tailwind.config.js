@@ -17,8 +17,8 @@ module.exports = {
           100: '#C51297',
           200: '#831266',
         },
-        tertiary: '#EF2967'
-
+        tertiary: '#EF2967',
+        mypurple: '#4f46e5',
 
       },
 

@@ -19,6 +19,7 @@ const TabsLayout = () => {
           shadowColor: "transparent",
           elevation: 0,
         },
+
         
       }}
     >
